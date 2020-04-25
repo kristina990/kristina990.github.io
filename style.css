@@ -1,0 +1,70 @@
+b{
+    color: #000066;
+    font-size: 60px;
+    position: center;
+    margin: 0;
+    text-align: center;
+
+}
+.carousel-item img {
+    height: 500px;
+}
+p{
+    font-style: italic;
+    font-size: 17px;
+}
+h1{
+	text-align: center;
+	color: #000066;
+	font-size: 30px;
+	margin: 0;
+}
+
+
+.form-wrap.profile {
+  width: 240px;
+  text-align: center;
+  padding: 30px;
+  
+}
+form {
+  background: white;
+  float: right;
+  width: auto;/*ширина полей*/
+  padding: 30px; /*отступ от края рамки внутри*/
+  border-radius:20px ; /*закругление рамки*/
+}
+.form-wrap:after, form div:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+
+label,{
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+input[type="text"] {
+  border-width: 0;
+  outline: none;
+  margin: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background: #e6e6e6;
+}
+input[type="password"] {
+  border-width: 0;
+  outline: none;
+  margin: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background: #e6e6e6;
+}
+
+
+.center-img {
+  text-align: center;
+}

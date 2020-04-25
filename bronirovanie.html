@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.."></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.."></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/p.."></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap..."></script>
+
+   
+<title>Отель для собак</title>
+ <link rel="stylesheet" href="style.css">
+
+    <style>
+        footer {
+            background-image:url( font.webp);
+        }
+    </style>
+</head>
+
+<!-------------------------------------------------------------------------->
+
+
+<body bgcolor="#000" background="font.webp">
+
+	
+	<script>
+	function text(){
+		alert("Готово! Бронь действует в течении суток.")
+	}
+	</script>
+   
+   
+   
+   <div class="container" id="header">
+        <IMG SRC="logo.png" ALIGN="left">
+        <div class="container text-center">
+			<b> Дом в лесу </b>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="container text-center">
+		<div class="form-wrap">
+			<div class="profile">
+				<h1>Бронирование</h1>
+			</div>
+			 <form>
+				<div>
+					<label for="name">Фамилия</label>
+					<input type="text" ng-model="firstName">
+				</div>
+				
+				<div>
+					<label for="name">Имя</label>
+					<input type="text" ng-model="lastName">
+				</div> 	
+				
+				<div>
+					<label for="name">Номер телефона</label>
+					<input type="text" ng-model="nt">
+				</div>
+				
+				<div>
+					<label for="name">Количество дней</label>
+					<input type="text" ng-model="dni">
+				
+				
+				<div class="select-arrow">
+				</div> 
+			</form> 
+		</div>
+		<br>
+	</div>
+	<br>
+	<button onclick="text()"  class="btn btn-primary" > Забронировать </button>
+<br>
+
+<script>
+var app = angular.module('my_project', []);
+app.controller('myCtrl', function($scope) {
+$scope.firstName = "";
+$scope.lastName = "";
+$scope.nt = "";
+$scope.dni = "";
+});
+</script>
+<br>
+<br>
+<br>
+	<br>
+	<br>
+	<br>
+	<footer class="container-fluid text-center">
+		<div id="footer" class="main-box">
+			<div>
+				Связь с нами
+				<p>Адрес: какой-то адрес</p>
+				<p>Телефон: какой-то телефон </p>
+			</div>
+		</div>
+		<br>
+	</footer>
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
