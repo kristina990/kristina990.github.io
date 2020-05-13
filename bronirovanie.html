@@ -35,7 +35,11 @@
    
    
    <div class="container" id="header">
-        <IMG SRC="logo.png" ALIGN="left">
+        <IMG SRC="logo.png" ALIGN="left" usemap="#map" alt="gs">
+		
+		<map name="map"> 
+			<area shape="rect" alt="pereh" coords="0,0,120,100" href="index.html">
+		</map>
         <div class="container text-center">
 			<b> Дом в лесу </b>
 		</div>
@@ -66,16 +70,20 @@
 				<div>
 					<label for="name">Количество дней</label>
 					<input type="text" ng-model="dni">
-				
-				
+				</div>
+				<!--<div>
+					<label for="name">Забронировать</label>
+					<input type="submit" ng-model="ots">
+				</div>-->
 				<div class="select-arrow">
 				</div> 
 			</form> 
 		</div>
 		<br>
+		<button onclick="text()"  class="btn btn-primary" > Забронировать </button>
 	</div>
 	<br>
-	<button onclick="text()"  class="btn btn-primary" > Забронировать </button>
+	
 <br>
 
 <script>
